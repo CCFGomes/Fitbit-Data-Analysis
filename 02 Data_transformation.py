@@ -105,3 +105,17 @@ combined_df.reset_index(drop=True, inplace=True)
 # Check if any missing values remain
 print(combined_df.isnull().sum())
 
+# Create the "WeekDay" column based on the day of the week (Monday: 0, Sunday: 6)
+combined_df.loc[:, "WeekDay"] = combined_df["ActivityDate"].dt.weekday
+
+# Create a new list called new_cols with the desired column order for the combined_df DataFrame
+new_cols = ["Id", "ActivityDate", "WeekDay",'TotalSteps', 'TotalDistance', 'TotalActiveMinutes', 'TotalMinutes',
+            'TotalActiveHours', 'LightlyActiveMinutes', 'FairlyActiveMinutes',
+            'VeryActiveMinutes', 'LightActiveDistance', 'ModeratelyActiveDistance',
+            'VeryActiveDistance', 'Calories', 'TotalHoursAsleep',
+            'WeightKg', 'Fat', 'BMI', 'MinuteAverage', 'HourlyAverage']
+
+# Reorder the columns of the merged_data DataFrame based on the new_cols list
+combined_df = combined_df[new_cols]
+
+print(combined_df)

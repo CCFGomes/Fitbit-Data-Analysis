@@ -1,10 +1,10 @@
-# Bellabeat Data Analysis Case Study
+# Bellabeat Data Analysis
 
-This repository contains the code and documentation for a data analysis case study conducted for Bellabeat, a high-tech manufacturer of health-focused products for women.
+This repository contains the code and documentation for a data analysis conducted for Bellabeat, a high-tech manufacturer of health-focused products for women.
 
 ## Objective
 
-The objective of this case study was to gain insights into consumer smart device usage patterns and provide data-driven recommendations to guide future marketing strategies for Bellabeat.
+The objective of this analysis was to gain insights into consumer smart device usage patterns and provide data-driven recommendations to guide future marketing strategies for Bellabeat.
 
 ## Data Analysis Process
 

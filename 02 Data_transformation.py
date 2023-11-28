@@ -81,7 +81,7 @@ daily_activity["TotalActiveMinutes"] = daily_activity["VeryActiveMinutes"] + dai
 daily_activity["TotalMinutes"] = daily_activity["TotalActiveMinutes"] + daily_activity["SedentaryMinutes"]
 daily_activity["TotalActiveHours"] = round(daily_activity["TotalActiveMinutes"] / 60)
 
-Concatenate the DataFrames
+# Concatenate the DataFrames
 
 # Step 1: Concatenate the DataFrames vertically to combine all the data
 combined_df = pd.concat([daily_activity, sleepday, weight_log, heart_rate], ignore_index=True)
